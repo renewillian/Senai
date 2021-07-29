@@ -1,18 +1,18 @@
 package com.company;
 
-import java.util.Scanner;
+import java.util.Arrays;
+
+import java.util.HashSet;
+import java.util.List;
+
+import java.util.Set;
 
 public class Duplicidade {
 
     public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(new Integer[]{1,2,1,3,4,4});
+        Set<Integer> numeros = new HashSet<>(numbers);
+        System.out.println(numeros);
 
-        System.out.println("digite o tamanho do seu array :");
-        Scanner scanner = new Scanner(System.in);
-        Integer i = scanner.nextInt();
-        int[] array =  new int[i];
-        for (int j = 0; j < array.length; j++) {
-            System.out.println("valor : " + array[i]);
-        }
-
-         }
+    }
 }
